@@ -12,4 +12,9 @@ export const projectsarray: IProjects = [
     url: "https://floriian.github.io/sten",
     description: "A simple REST API for learning purposes.",
   },
+  {
+	name: "URL Shortener",
+	url: "https://github.com/floriian/urlshortener",
+	description: "A basic URL shortener, using Mongoose & Express & Typescript.",
+  }
 ];
