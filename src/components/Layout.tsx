@@ -1,9 +1,10 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
-type Props = {
-  children: React.ReactNode;
-};
-
-export default function Layout({ children }: Props) {
-  return <div className="w-full h-full bg-zinc-800 text-white">{children}</div>;
+export default function Layout() {
+  return (
+    <div className="w-screen h-screen bg-zinc-800 text-white">
+      <Outlet />
+    </div>
+  );
 }
