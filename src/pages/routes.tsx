@@ -1,6 +1,6 @@
-import { RouteObject, createBrowserRouter } from "react-router-dom";
-import Layout from "../components/Layout";
-import Home from "./Home";
+import { RouteObject, createBrowserRouter } from 'react-router-dom';
+import Layout from '../components/Layout';
+import Home from './Home';
 
 type Route = RouteObject & {
   name?: string;
@@ -8,10 +8,11 @@ type Route = RouteObject & {
 
 export const routes: Route[] = [
   {
-    path: "/",
+    path: '/',
     element: <Layout />,
     children: [
       {
+        //name: 'Főoldal',
         index: true,
         element: <Home />,
       },
