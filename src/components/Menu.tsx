@@ -72,7 +72,7 @@ function MenuLinks() {
           className="mr-5  hidden text-xl transition-colors duration-150 hover:text-zinc-400 md:block"
           to={route.path!}
         >
-          FASZ
+          LINK
         </Link>
       ))}
     </>
