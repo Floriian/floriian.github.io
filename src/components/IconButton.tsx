@@ -5,12 +5,12 @@ type Props = {
   link: string;
 };
 
-export function CustomIcon({ icon, link }: Props) {
+export function IconButton({ icon, link }: Props) {
   return (
     <a
       href={link}
       target="_blank"
-      className="m-2 transition-all duration-100 hover:cursor-pointer hover:text-blue-900"
+      className="m-2 transition-colors duration-150 hover:cursor-pointer hover:text-cyan-500"
     >
       {icon}
     </a>

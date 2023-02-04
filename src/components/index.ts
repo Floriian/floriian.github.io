@@ -2,7 +2,7 @@ export * from './AboutMe';
 export * from './Avatar';
 export * from './Card';
 export * from './Contacts';
-export * from './CustomIcon';
+export * from './IconButton';
 export * from './Layout';
 export * from './Menu';
 export * from './RoadMap';
