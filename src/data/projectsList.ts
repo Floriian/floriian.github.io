@@ -12,7 +12,7 @@ export interface IProjects extends Array<TProject> {}
 export const projects: IProjects = [
   {
     name: 'STEN',
-    url: 'https://floriian.github.io/sten',
+    url: 'https://github.com/floriian/sten',
     description: 'A simple REST API for teachers for teach how REST API works.',
     technology: ['NestJS', 'Typescript', 'PostgreSQL'],
   },

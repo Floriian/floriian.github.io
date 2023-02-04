@@ -13,12 +13,8 @@ export function RoadMap() {
           return b.startDate - a.startDate;
         })
         .map((rmap) => (
-          <motion.li
+          <li
             ref={ref}
-            animate={inView ? { scale: 1 } : { scale: 0 }}
-            transition={{
-              duration: 0.7,
-            }}
             className="mb-10 ml-4"
             key={rmap.description}
           >
@@ -30,7 +26,7 @@ export function RoadMap() {
             </time>
             <h3 className="text-xl">{rmap.name}</h3>
             <p className="text-zinc-500">{rmap.description}</p>
-          </motion.li>
+          </li>
         ))}
     </ol>
   );
