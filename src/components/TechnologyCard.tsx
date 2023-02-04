@@ -23,8 +23,7 @@ export function TechnologyCard({ title, classname }: Props) {
   return (
     <motion.div
       className={
-        'm-1 rounded-full p-2 pl-4 pr-4 tracking-wider text-white ' +
-        technologyBg
+        'm-1 rounded-full px-2 py-2 tracking-wider text-white ' + technologyBg
       }
       whileHover={{
         scale: 1.1,
@@ -33,7 +32,7 @@ export function TechnologyCard({ title, classname }: Props) {
         },
       }}
     >
-      {title}
+      <p className="text-center">{title}</p>
     </motion.div>
   );
 }

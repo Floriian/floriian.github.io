@@ -23,4 +23,11 @@ export const projects: IProjects = [
       'A basic URL shortener, using Mongoose & Express & Typescript.',
     technology: ['MongoDB', 'Express', 'Typescript'],
   },
+  {
+    name: 'HEDPhotograpy',
+    url: 'https://github.com/floriian/hedphotography',
+    description:
+      'A photography website for my friend using Next.JS. Under development.',
+    technology: ['TailwindCSS', 'React'],
+  },
 ];
