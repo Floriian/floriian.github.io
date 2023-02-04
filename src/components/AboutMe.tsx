@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AboutMe() {
+export function AboutMe() {
   const currentDate = new Date().getFullYear();
   return (
     <div className="rounded-md border-2 border-zinc-500 p-2">
@@ -21,10 +21,8 @@ function AboutMe() {
         because it has no rules, what folder-structure and default it's not
         typesafe. Then I was discovered Nest.JS... It was a redemption. In 2022
         I created an API for my school with NestJS and Prisma. It has no
-        authentication, because it was a requirement from my teacher. Docs
+        authentication, because it was a requirement from my teacher.
       </p>
     </div>
   );
 }
-
-export default AboutMe;

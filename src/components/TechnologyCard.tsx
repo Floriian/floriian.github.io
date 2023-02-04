@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
-import { Stack, Technologies } from './stack';
+import { Technologies } from '../data';
 
 type Props = {
   title: Technologies;
   classname?: string;
 };
 
-function TechnologyCard({ title, classname }: Props) {
+export function TechnologyCard({ title, classname }: Props) {
   const technologyBg = classNames({
     'bg-red-500': title === 'NestJS',
     'bg-green-800': title === 'NodeJS',
@@ -23,8 +23,7 @@ function TechnologyCard({ title, classname }: Props) {
   return (
     <motion.div
       className={
-        'm-1 rounded-full p-2 pl-4 pr-4 tracking-wider text-white ' +
-        technologyBg
+        'm-1 rounded-full px-2 py-2 tracking-wider text-white ' + technologyBg
       }
       whileHover={{
         scale: 1.1,
@@ -33,9 +32,7 @@ function TechnologyCard({ title, classname }: Props) {
         },
       }}
     >
-      {title}
+      <p className="text-center">{title}</p>
     </motion.div>
   );
 }
-
-export default TechnologyCard;

@@ -12,7 +12,7 @@ export interface IProjects extends Array<TProject> {}
 export const projects: IProjects = [
   {
     name: 'STEN',
-    url: 'https://floriian.github.io/sten',
+    url: 'https://github.com/floriian/sten',
     description: 'A simple REST API for teachers for teach how REST API works.',
     technology: ['NestJS', 'Typescript', 'PostgreSQL'],
   },
@@ -22,5 +22,12 @@ export const projects: IProjects = [
     description:
       'A basic URL shortener, using Mongoose & Express & Typescript.',
     technology: ['MongoDB', 'Express', 'Typescript'],
+  },
+  {
+    name: 'HEDPhotograpy',
+    url: 'https://github.com/floriian/hedphotography',
+    description:
+      'A photography website for my friend using Next.JS. Under development.',
+    technology: ['TailwindCSS', 'React'],
   },
 ];

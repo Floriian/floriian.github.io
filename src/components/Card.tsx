@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Technologies } from './stack';
-import TechnologyCard from './TechnologyCard';
+import { Technologies } from '../data';
+import { TechnologyCard } from './TechnologyCard';
 
 type Props = {
   title: string;
@@ -10,7 +10,7 @@ type Props = {
   technology: Technologies[];
 };
 
-function Card({ technology, body, repoUrl, title }: Props) {
+export function Card({ technology, body, repoUrl, title }: Props) {
   const ref = useRef(null);
   const inView = useInView(ref);
 
@@ -34,7 +34,10 @@ function Card({ technology, body, repoUrl, title }: Props) {
       <div className="p-2">
         <div className="grid grid-cols-2 text-center">
           {technology.map((t) => (
-            <TechnologyCard title={t} />
+            <TechnologyCard
+              title={t}
+              key={t}
+            />
           ))}
         </div>
         <div>
@@ -50,5 +53,3 @@ function Card({ technology, body, repoUrl, title }: Props) {
     </motion.div>
   );
 }
-
-export default Card;
