@@ -1,5 +1,5 @@
 import { RouteObject, createBrowserRouter } from 'react-router-dom';
-import Layout from '../components/Layout';
+import { Layout } from '../components';
 import Home from './Home';
 
 type Route = RouteObject & {

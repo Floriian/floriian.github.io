@@ -5,7 +5,7 @@ import { routes } from '../pages';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import classNames from 'classnames';
 
-export default function Menu() {
+export function Menu() {
   const [open, setOpen] = useState<boolean>(false);
   const [scrollPos, setScrollPos] = useState<number>(0);
 

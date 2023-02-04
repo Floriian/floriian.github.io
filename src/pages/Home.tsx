@@ -1,10 +1,13 @@
 import React from 'react';
-import AboutMe from '../components/AboutMe';
-import Avatar from '../components/Avatar';
-import Card from '../components/Card';
-import { projects } from '../components/projectsList';
-import { stacks } from '../components/stack';
-import TechnologyCard from '../components/TechnologyCard';
+import {
+  AboutMe,
+  Avatar,
+  Card,
+  Contacts,
+  RoadMap,
+  TechnologyCard,
+} from '../components';
+import { projects, stacks } from '../data';
 
 export default function Home() {
   return (
@@ -42,6 +45,8 @@ export default function Home() {
             />
           ))}
         </div>
+        <RoadMap />
+        <Contacts />
       </div>
     </>
   );

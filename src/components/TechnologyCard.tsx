@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
-import { Stack, Technologies } from './stack';
+import { Technologies } from '../data';
 
 type Props = {
   title: Technologies;
   classname?: string;
 };
 
-function TechnologyCard({ title, classname }: Props) {
+export function TechnologyCard({ title, classname }: Props) {
   const technologyBg = classNames({
     'bg-red-500': title === 'NestJS',
     'bg-green-800': title === 'NodeJS',
@@ -37,5 +37,3 @@ function TechnologyCard({ title, classname }: Props) {
     </motion.div>
   );
 }
-
-export default TechnologyCard;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Menu from './Menu';
+import { Menu } from './Menu';
 
-export default function Layout() {
+export function Layout() {
   return (
     <div className="h-full w-full bg-zinc-800 text-white">
       {/* <Menu /> */}
