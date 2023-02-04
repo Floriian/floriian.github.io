@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { routes } from '../pages';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import classNames from 'classnames';
+
 export default function Menu() {
   const [open, setOpen] = useState<boolean>(false);
   const [scrollPos, setScrollPos] = useState<number>(0);
@@ -19,13 +20,9 @@ export default function Menu() {
     }
   });
 
-  useMotionValueEvent(scrollYProgress, 'change', (latest) => {
-    console.log(latest);
-  });
-
   const navClass = classNames({
-    'fixed border-b-[1px] border-zinc-500 bg-zinc-800 ': scrollPos === 1,
-    block: scrollPos != 1,
+    'fixed border-b-[1px] border-zinc-500 bg-zinc-800': scrollPos === 1,
+    block: scrollPos === 0,
   });
 
   return (
