@@ -3,7 +3,7 @@ import React from 'react';
 export function AboutMe() {
   const currentDate = new Date().getFullYear();
   return (
-    <div className="rounded-md border-2 border-zinc-500 p-2">
+    <div className="m-10 rounded-md border-2 border-zinc-500 p-2">
       <p className="text-xl tracking-widest first-letter:font-jetbrains first-letter:text-2xl first-letter:uppercase">
         Hello!
       </p>
