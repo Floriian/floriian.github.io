@@ -42,7 +42,7 @@ export function Card({ technology, body, repoUrl, title }: Props) {
           ))}
         </div>
         <div>
-          <p>{body}</p>
+          <p className="text-center">{body}</p>
         </div>
         <a
           href={repoUrl}
