@@ -24,7 +24,7 @@ export function Card({ technology, body, repoUrl, title }: Props) {
       }}
       whileHover={{
         scale: 1.2,
-        backgroundColor: 'rgb(82 82 91)',
+        backgroundColor: 'rgb(24 24 27)',
         transition: {
           duration: 0.5,
         },
@@ -35,6 +35,7 @@ export function Card({ technology, body, repoUrl, title }: Props) {
         <div className="grid grid-cols-2 text-center">
           {technology.map((t) => (
             <TechnologyCard
+              onlyIcon={false}
               title={t}
               key={t}
             />

@@ -8,29 +8,30 @@ import {
   TechnologyCard,
 } from '../components';
 import { projects, stacks } from '../data';
-
 export default function Home() {
   return (
     <>
       <Avatar />
-      <p className="m-2 text-center font-jetbrains tracking-widest">
-        Technologies
-      </p>
-      <div className="m-2 justify-center text-center lg:flex">
-        {stacks
-          .filter((stack) => stack.show)
-          .map((stack) => (
-            <TechnologyCard
-              key={stack.title}
-              title={stack.title}
-            />
-          ))}
-      </div>
       <div className="m-2 p-5">
         <p className="text-center font-jetbrains text-2xl uppercase tracking-widest">
           About Me
         </p>
         <AboutMe />
+        <p className="m-2 text-center font-jetbrains tracking-widest">
+          Technologies
+        </p>
+        <div className="m-2 flex justify-center text-center">
+          {stacks
+            .filter((stack) => stack.show)
+            .map((stack) => (
+              <TechnologyCard
+                key={stack.title}
+                icon={stack.icon}
+                title={stack.title}
+                onlyIcon={true}
+              />
+            ))}
+        </div>
         <p className="text-center font-jetbrains text-2xl uppercase tracking-widest">
           Projects
         </p>
@@ -45,7 +46,9 @@ export default function Home() {
             />
           ))}
         </div>
-        <RoadMap />
+        <div className="m-5 flex w-full justify-center">
+          <RoadMap />
+        </div>
         <Contacts />
       </div>
     </>
