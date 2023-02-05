@@ -16,7 +16,7 @@ export function Card({ technology, body, repoUrl, title }: Props) {
 
   return (
     <motion.div
-      className="m-2 h-64 w-64 cursor-default rounded-md border-2 border-zinc-600"
+      className="m-5 h-64 w-64 cursor-default rounded-md border-2 border-zinc-600"
       ref={ref}
       animate={inView ? { scale: 1 } : { scale: 0 }}
       transition={{
@@ -46,7 +46,7 @@ export function Card({ technology, body, repoUrl, title }: Props) {
         </div>
         <a
           href={repoUrl}
-          className="text-xl transition-colors duration-150 hover:text-cyan-500"
+          className="text-center text-xl transition-colors duration-150 hover:text-cyan-500"
         >
           Go to repository
         </a>
