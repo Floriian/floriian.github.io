@@ -5,9 +5,11 @@ export function AboutMe() {
   const currentDate = new Date().getFullYear();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <div className="self-center">
+      <div className="flex items-center justify-center">
         {/* THIS WOULD BE A PICTURE */}
-        <Avatar />
+        <div className="flex h-64 w-64 items-center justify-center rounded-full border-2 border-cyan-500 bg-zinc-800">
+          <p className="font-jetbrains text-2xl">Floriian</p>
+        </div>
       </div>
       <div>
         My name is Flórián Lovasi. I'm {currentDate - 2002} years old
