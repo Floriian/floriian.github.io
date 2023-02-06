@@ -42,11 +42,11 @@ export function Card({ technology, body, repoUrl, title }: Props) {
           ))}
         </div>
         <div>
-          <p className="text-center">{body}</p>
+          <p>{body}</p>
         </div>
         <a
           href={repoUrl}
-          className="text-center text-xl transition-colors duration-150 hover:text-cyan-500"
+          className="text-xl transition-colors duration-150 hover:text-cyan-500"
         >
           Go to repository
         </a>
