@@ -35,7 +35,7 @@ export default function Home() {
         <p className="mt-5 text-center font-jetbrains text-2xl uppercase tracking-widest">
           Projects
         </p>
-        <div className="flex w-full justify-center self-center lg:flex-row">
+        <div className="flex w-full justify-center lg:flex-row">
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {projects.map((project) => (
               <Card
