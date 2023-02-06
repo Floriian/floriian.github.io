@@ -17,9 +17,21 @@ export function RoadMap() {
             className="mb-10 ml-4"
             key={rmap.description}
           >
-            <div className="absolute -left-2 mt-2 h-6 w-6 text-xl">
+            <motion.div
+              className="-left-2 mt-2 h-6 w-6 text-xl"
+              initial={{ position: 'unset', opacity: 0 }}
+              ref={ref}
+              animate={
+                inView
+                  ? { position: 'absolute', x: 0, opacity: 1 }
+                  : { x: 2, position: 'unset' }
+              }
+              transition={{
+                duration: 0.5,
+              }}
+            >
               {rmap.type === 'SCHOOL' ? <FcGraduationCap /> : <MdWork />}
-            </div>
+            </motion.div>
             <motion.div
               ref={ref}
               animate={inView ? { x: 0, opacity: 1 } : { x: 20, opacity: 0 }}
