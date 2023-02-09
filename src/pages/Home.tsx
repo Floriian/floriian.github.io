@@ -17,9 +17,9 @@ export default function Home() {
           About Me
         </p>
         <AboutMe />
-        <p className="mt-5 text-center font-jetbrains text-2xl uppercase tracking-widest">
+        <h1 className="mt-5 text-center font-jetbrains text-2xl uppercase tracking-widest">
           Technologies
-        </p>
+        </h1>
         <div className="m-2 flex justify-center text-center">
           {stacks
             .filter((stack) => stack.show)
@@ -32,9 +32,9 @@ export default function Home() {
               />
             ))}
         </div>
-        <p className="mt-5 text-center font-jetbrains text-2xl uppercase tracking-widest">
+        <h1 className="mt-5 text-center font-jetbrains text-2xl uppercase tracking-widest">
           Projects
-        </p>
+        </h1>
         <div className="flex w-full justify-center lg:flex-row">
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {projects.map((project) => (
@@ -48,9 +48,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <p className="mt-5 text-center font-jetbrains text-2xl uppercase tracking-widest">
+        <h1 className="mt-5 text-center font-jetbrains text-2xl uppercase tracking-widest">
           Roadmap
-        </p>
+        </h1>
         <div className="m-5 flex w-full justify-center">
           <RoadMap />
         </div>

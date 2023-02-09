@@ -1,15 +1,26 @@
 import React from 'react';
 import { Avatar } from './Avatar';
-
+import { motion } from 'framer-motion';
 export function AboutMe() {
   const currentDate = new Date().getFullYear();
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
+    <div className="grid grid-cols-1 items-center md:grid-cols-2">
       <div className="flex items-center justify-center">
         {/* THIS WOULD BE A PICTURE */}
-        <div className="flex h-64 w-64 items-center justify-center rounded-full border-2 border-cyan-500 bg-zinc-800">
-          <p className="font-jetbrains text-2xl">Floriian</p>
-        </div>
+        <img
+          className="bg-transparent"
+          // initial={{
+          //   boxShadow: '2px 1px 146px 14px rgba(87, 13, 13, 0.72)',
+          // }}
+          // animate={{
+          //   boxShadow: '6px 2px 150px 14px rgba(87,13,13, 0.72)',
+          // }}
+          // transition={{
+          //   duration: Infinity,
+          // }}
+          src="/bitmoji.png"
+          alt=""
+        />
       </div>
       <div>
         My name is Flórián Lovasi. I'm {currentDate - 2002} years old
