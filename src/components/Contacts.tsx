@@ -4,6 +4,7 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiOutlineFacebook,
+  AiOutlineGithub,
   AiOutlineInstagram,
   AiOutlineLinkedin,
   AiOutlineMail,
@@ -29,7 +30,7 @@ export function Contacts() {
           link="mailto:lovasiflorian@outlook.com"
         />
         <IconButton
-          icon={<FiGithub />}
+          icon={<AiOutlineGithub />}
           link="https://github.com/Floriian/"
         />
         <IconButton
